@@ -1,6 +1,6 @@
-package com.example.config;
+package com.theksbd.config;
 
-import com.example.beans.Vehicle;
+import com.theksbd.beans.Vehicle;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
