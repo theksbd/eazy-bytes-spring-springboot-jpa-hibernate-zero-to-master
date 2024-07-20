@@ -4,7 +4,7 @@ import com.theksbd.beans.Vehicle;
 import com.theksbd.config.ProjectConfig;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-public class Main {
+public class Example1 {
     public static void main(String[] args) {
         Vehicle vehicle = new Vehicle();
         vehicle.setName("VinFast");
