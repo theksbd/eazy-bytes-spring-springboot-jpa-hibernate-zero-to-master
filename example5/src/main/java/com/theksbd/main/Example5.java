@@ -8,6 +8,7 @@ public class Example5 {
     public static void main(String[] args) {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(ProjectConfig.class);
         Vehicle vehicle = context.getBean(Vehicle.class);
-        System.out.println("Primary Vehicle: " + vehicle.getName());
+        System.out.println("Vehicle: " + vehicle.getName());
+        vehicle.printHello();
     }
 }
