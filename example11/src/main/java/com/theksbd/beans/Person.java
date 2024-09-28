@@ -15,11 +15,21 @@ public class Person {
      * Autowired annotation marks a constructor, field, setter method, or config method
      * is used to autowire the beans at runtime by Spring's dependency injection mechanism.
      */
-    @Autowired
+    // @Autowired
     private Vehicle vehicle;
 
-    public Person() {
+//    public Person() {
+//        System.out.println("Person bean is created by Spring");
+//    }
+
+    /*
+    * Autowired annotation marks a constructor, field, setter method, or config method
+    * is used to autowire the beans at runtime by Spring's dependency injection mechanism.
+    * */
+    @Autowired
+    public Person(Vehicle vehicle) {
         System.out.println("Person bean is created by Spring");
+        this.vehicle = vehicle;
     }
 
     public String getName() {
@@ -34,6 +44,11 @@ public class Person {
         return vehicle;
     }
 
+    /*
+    * Autowired annotation marks a constructor, field, setter method, or config method
+    * is used to autowire the beans at runtime by Spring's dependency injection mechanism.
+    * */
+    // @Autowired
     public void setVehicle(Vehicle vehicle) {
         this.vehicle = vehicle;
     }
